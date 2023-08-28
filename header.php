@@ -29,7 +29,7 @@ session_start();
               <a class="nav-link" aria-current="page" href="histori_peminjaman.php">Transaksi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="logout.php">Logout</a>
+              <a class="nav-link" aria-current="page" href="login.php">Logout</a>
             </li>
           </ul>
         </div>
