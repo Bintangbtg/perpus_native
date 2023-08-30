@@ -7,8 +7,6 @@ if($_POST){
     
     if(empty($nama_kelas)){
         echo "<script>alert('nama kelas tidak boleh kosong');location.href='tambah_kelas.php';</script>";
-
-
     } elseif(empty($kelompok)){
         echo "<script>alert('kelompok tidak boleh kosong');location.href='tambah_kelas.php';</script>";
     } elseif(empty($angkatan)){
