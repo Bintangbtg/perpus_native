@@ -18,7 +18,7 @@
             <option value="P">Perempuan</option>
         </select>
         Alamat : 
-        <textarea name="alamat" class="form-control" rows="4"></textarea>
+        <textarea name="alamat" class="form-control" rows="4" value=""></textarea>
         Kelas :
         <select name="id_kelas" class="form-control">
             <option></option>

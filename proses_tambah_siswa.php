@@ -9,8 +9,6 @@ if($_POST){
     $id_kelas=$_POST['id_kelas'];
     if(empty($nama_siswa)){
         echo "<script>alert('nama siswa tidak boleh kosong');location.href='tambah_siswa.php';</script>";
-
-
     } elseif(empty($username)){
         echo "<script>alert('username tidak boleh kosong');location.href='tambah_siswa.php';</script>";
     } elseif(empty($password)){
