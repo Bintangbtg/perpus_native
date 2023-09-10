@@ -9,12 +9,15 @@ if($_POST){
     $password=$_POST['password'];
     $id_kelas=$_POST['id_kelas'];
     if(empty($nama_siswa)){
-        echo "<script>alert('nama siswa tidak boleh kosong');location.href='tambah_siswa.php';</script>";
+        echo "<script>alert('nama siswa tidak boleh kosong');location.href='tampil_siswa.php';</script>";
 
 
     } elseif(empty($username)){
-        echo "<script>alert('username tidak boleh kosong');location.href='tambah_siswa.php';</script>";
-    } else {
+        echo "<script>alert('username tidak boleh kosong');location.href='tampil_siswa.php';</script>";
+    } 
+    else if(empty($password)){
+        echo "<script>alert('password tidak boleh kosong');location.href='tampil_siswa.php';</script>";
+    }else {
         include "koneksi.php";
         if(empty($password)){
             $update=mysqli_query($conn,"update siswa set nama_siswa='".$nama_siswa."',tanggal_lahir='".$tanggal_lahir."', gender='".$gender."', alamat='".$alamat."', username='".$username."', id_kelas='".$id_kelas."' where id_siswa = '".$id_siswa."' ") or die(mysqli_error($conn));
